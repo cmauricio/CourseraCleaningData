@@ -9,9 +9,7 @@ Getting the data and merging the databases
 1. Download the zip file
 2. Unziping the file
 3. Extracting the individual files and asigning them to variables
-
 4. Getting the name for the X_measures
-
 5. Changing the names of the colums in the different files
 6. Merging the test and the train files
 7. Creating the big database
@@ -35,14 +33,12 @@ Naming the dataset with appropriate names
 
 1. This part makes use of common expresions in order to evaluate an 
 2. replace values 
-
 3. get rid of the parentheses
 4. get rid of the dash
 5. replace the inicial f with "freq"
 6. replace the initial t with "time"
 7. get rid of the commas
 8. get the names in lower case
-
 9. replace the column names in the database
 
 
