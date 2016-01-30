@@ -118,4 +118,5 @@ library(reshape2)
 
 tidyData<-dcast(mergedData, subjectid~activityname, mean)
 
-write.table(tidyData, file="tidyData.csv" , sep = ";", dec = ",")
+write.table(tidyData, file="tidyData.txt" , sep = " ", dec = ".", row.names = F)
+
