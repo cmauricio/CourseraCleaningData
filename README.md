@@ -12,13 +12,15 @@ Getting the data and merging the databases
 4. Getting the name for the X_measures
 5. Changing the names of the colums in the different files
 6. Merging the test and the train files
-7. Creating the big database
+7. Creating the big database by merging the two previous merges
 
 # Second point #
 Getting the mean and SD measurements
 
 1. As interpreted by me, no database needed to be exported in this step, 
-2. therefore this database was only created on code and for this point.
+therefore this database was only created on code and for this point.
+
+I did not use this database for anything else.
 
 # Third point #
 Using descriptive names
@@ -45,4 +47,6 @@ Naming the dataset with appropriate names
 # Fifth point
 Average of each variable for each activity and each subject
 
-Here I used the dcast funtion instead of the summarise_each function
+Here I used the dcast funtion instead of the summarise_each function.
+The result was an 30*7 database, with 180 observations (means).
+30 subjects * 6 variables
