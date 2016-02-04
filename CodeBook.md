@@ -1,41 +1,68 @@
 # CourseraCleaningData
-Repository made to contain the files for the last submission of the course Getting and Cleaning Data JHU
 
-# Assignment: Getting and Cleaning Data Course Project
+# Code book for the variables included in the database
 
-# First point variables
+This document contains a list of variables of the average for each activity and each subject.
 
-url (string): url of the zip file 
-WD (string): path of the working directory
-subject_test (data frame): variable containing the data of "subject_test.txt"
-x_test (data frame): variable containing the data of "X_test.txt"
-y_test (data frame): variable containing the data from "y_test.txt"
-subject_train (data frame): variable containing the data of "subject_train.txt"
-x_train (data frame): variable containing the data of "X_train.txt"
-y_train (data frame): variable containing the data of "y_train.txt"
-features (vector of strings): variable containing the data of "features.txt"
-mergedTest (data frame): variable containing the data of subject_test, x_test, and y_test
-mergedTrain (data frame): variable containing the data of subject_train, x_train, and y_train
-mergedData (data frame): variable containing the data of mergedTest and mergedTrain
+- "timebodyacc.mean.x" 
+- "timebodyacc.mean.y" 
+- "timebodyacc.mean.z" 
+- "timegravityacc.mean.x" 
+- "timegravityacc.mean.y" 
+- "timegravityacc.mean.z" 
+- "timebodyaccjerk.mean.x" 
+- "timebodyaccjerk.mean.y" 
+- "timebodyaccjerk.mean.z" 
+- "timebodygyro.mean.x" 
+- "timebodygyro.mean.y" 
+- "timebodygyro.mean.z" 
+- "timebodygyrojerk.mean.x" 
+- "timebodygyrojerk.mean.y" 
+- "timebodygyrojerk.mean.z" 
+- "timebodyaccmag.mean" 
+- "timegravityaccmag.mean" 
+- "timebodyaccjerkmag.mean" 
+- "timebodygyromag.mean" 
+- "timebodygyrojerkmag.mean" 
+- "freqbodyacc.mean.x" 
+- "freqbodyacc.mean.y" 
+- "freqbodyacc.mean.z" 
+- "freqbodyacc.meanfreq.x" 
+- "freqbodyacc.meanfreq.y" 
+- "freqbodyacc.meanfreq.z" 
+- "freqbodyaccjerk.mean.x" 
+- "freqbodyaccjerk.mean.y" 
+- "freqbodyaccjerk.mean.z" 
+- "freqbodyaccjerk.meanfreq.x" 
+- "freqbodyaccjerk.meanfreq.y" 
+- "freqbodyaccjerk.meanfreq.z" 
+- "freqbodygyro.mean.x" 
+- "freqbodygyro.mean.y" 
+- "freqbodygyro.mean.z" 
+- "freqbodygyro.meanfreq.x" 
+- "freqbodygyro.meanfreq.y" 
+- "freqbodygyro.meanfreq.z" 
+- "freqbodyaccmag.mean" 
+- "freqbodyaccmag.meanfreq" 
+- "freqbodybodyaccjerkmag.mean" 
+- "freqbodybodyaccjerkmag.meanfreq" 
+- "freqbodybodygyromag.mean" 
+- "freqbodybodygyromag.meanfreq" 
+- "freqbodybodygyrojerkmag.mean" 
+- "freqbodybodygyrojerkmag.meanfreq" 
+- "angletbodyaccmean.gravity" 
+- "angletbodyaccjerkmean.gravitymean" 
+- "angletbodygyromean.gravitymean" 
+- "angletbodygyrojerkmean.gravitymean" 
+- "anglex.gravitymean" 
+- "angley.gravitymean" 
+- "anglez.gravitymean"
 
-# Second point
+List of activities
 
-nameArray (vector of stings): name of the columns of mergedData
-a (vector of integers): index of all the columns with the name mean or std on it
-firstSubset (data frame): variable containing the subset of columns with the word mean or std
-
-# Third point
-
-labels (vector of strings): variable with the data from "activity_labels.txt"
-i (integer): counter
-
-# Fourth point
-
-features2 (vector of strings): name of the columns of mergedData
-b (vector of strings): filtered subset of features2, according with the specifications.
-    This subset is the transformed into de name of the columns of the database
-
-# Fifth point
-
-tidyData (data frame): final database of tidy data acording to subject id and activity name
-
+1. WALKING
+2. WALKING_UPSTAIRS
+3. WALKING_DOWNSTAIRS
+4. SITTING
+5. STANDING
+6. LAYING
