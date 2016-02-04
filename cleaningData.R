@@ -114,9 +114,10 @@ colnames(mergedData)<-b
 ##### Fifth point #####
 ##### Average of each variable for each activity and each subject
 
-library(reshape2)
+nameArray<-colnames(mergedData)
 
-tidyData<-dcast(mergedData, subjectid~activityname, mean)
+c<-grep("[Mm]ean|[Ss]td",nameArray)
+
+secondSubset<-mergedData[,c]
 
 write.table(tidyData, file="tidyData.txt" , sep = " ", dec = ".", row.names = F)
-
