@@ -116,7 +116,7 @@ colnames(mergedData)<-b
 
 nameArray<-colnames(mergedData)
 
-c<-grep("[Mm]ean|[Ss]td",nameArray)
+c<-grep("[Mm]ean",nameArray)
 
 secondSubset<-mergedData[,c]
 
